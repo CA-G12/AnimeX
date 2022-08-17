@@ -68,3 +68,30 @@ const renderCards = (response) => {
 // fetch('https://kitsu.io/api/edge/anime?filter[text]=hunter+movie')
 // .then(response => response.json())
 // .then(response => renderCards(response))
+
+const container = document.querySelector(".main");
+const createCards = (data) => {
+    data.data.forEach((element) => {
+      let card = document.createElement("div");
+      card.classList.add("giphy");
+  
+      let img = document.createElement("img");
+      img.classList.add("img-giphy");
+      img.setAttribute("src", `${element.images.downsized.url}`);
+      card.appendChild(img);
+  
+      container.appendChild(card);
+    });
+  };
+
+//   const getData = (animeName) => {
+//     return fetch(`https://api.giphy.com/v1/gifs/search?api_key=0YFRd3CLdBuVoDjj5p33iJMw7wwZN74C&q=${animeName}&limit=25&offset=0&rating=g&lang=en
+//       `)
+//       .then((response) => response.json())
+//       .catch((err) => err);
+//   };
+  
+//   getData("djkhaled")
+//     .then((data) => createCards(data))
+//     .catch(console.log);
+  
