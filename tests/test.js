@@ -24,5 +24,14 @@ test('/giphy should return the giphy page', (done) => {
     })
 })
 
-
+test('/404 should return the 404 Not Found Page', (done) => {
+    request(app)
+    .get('/404')
+    .expect(404)
+    .expect('Content-Type', /html/)
+    .end((err, res) => {
+        if (err) return done(err);
+        done();
+    })
+})
 
