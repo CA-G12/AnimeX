@@ -68,7 +68,7 @@ const renderCards = (response) => {
   });
 };
 
-fetch(`/search/boku-no-hero`)
+fetch(`/search/trending`)
   .then((response) => response.json())
   .then((response) => renderCards(response))
   .catch((err) => console.log(err));
