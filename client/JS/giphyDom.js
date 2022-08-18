@@ -13,7 +13,7 @@ const createCards = (data) => {
     container.appendChild(card);
   });
 };
-console.log(window.location);
+
 const searchParams = new URLSearchParams(window.location.search);
 const anime = searchParams.get("anime");
 

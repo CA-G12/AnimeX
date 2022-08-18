@@ -1,6 +1,6 @@
 const path=require('path')
-const getGiphy=(req, res) => {
+const getGiphyPage =(req, res) => {
     res.sendFile(path.join(__dirname, '..', '..','client', 'HTML', 'giphy.html'))
 }
 
-module.exports=getGiphy
+module.exports=getGiphyPage

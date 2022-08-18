@@ -33,8 +33,15 @@ The user enters the website to find a landing page with an anime theme. Then, as
 
 Afterwards, an anime list will show up with a 'View GIFs' button that appears when hovering on the specific anime card. When clicking, the user gets redirect to our GIFs page that shows anime pictures related to the anime.
 
-# **Built with** 
+# Installation Guide
+- Use: git clone https://github.com/CA-G12/AnimeX
+- Change your current directory cd ./AnimeX
+- Open it with your favorite text editor code.
+- Add a .env file with a value of API_KEY = 'here add your GIPHY access token'.
+- Run the server locally.
+- Enjoy using the AnimeX website.
 
+# **Built with** 
 
 - HTML5
 - CSS3
@@ -56,6 +63,3 @@ Afterwards, an anime list will show up with a 'View GIFs' button that appears wh
 ![screen2](https://user-images.githubusercontent.com/77805478/185121467-f170cc23-22ec-418a-b88a-63311fc8a348.jpg)
 
 ![screen3](https://user-images.githubusercontent.com/77805478/185121597-1877a13a-4c39-4883-9f08-33803ab082c4.jpg)
-
-
-
